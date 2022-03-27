@@ -1,0 +1,1039 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #421f08;
+}
+
+.wrap-nav {
+  max-width: 1350px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.3s ease;
+  top: 0;
+}
+
+.navbar.sticky {
+  transition: all 0.3s ease;
+  top: 0;
+}
+
+.navbar.sticky .express-info {
+  padding: 4px 16px 0 0;
+}
+.navbar.sticky .express-delivery {
+  padding: 0;
+}
+
+.navbar .wrap-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  background: #ffbf45;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo span {
+  margin-left: 16px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo span {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.navbar .express-delivery {
+  padding: 20px 0 0 0;
+}
+
+.navbar .express-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 16px;
+}
+
+.navbar .express-info img {
+  width: 25px;
+  height: 20px;
+}
+
+.navbar .express-info span {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar .express-delivery .menu li {
+  display: inline-block;
+  padding: 12px 14px;
+}
+
+.navbar .express-delivery .menu li a {
+  color: #421f08;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.navbar .express-delivery .menu-btn {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Banner start styling */
+.banner {
+  background: #ffbf45;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 32px;
+  height: 650px;
+  font-family: "Roboto Slab", sans-serif;
+  width: 1349px;
+}
+
+.banner .sub-title-1 {
+  border: 2px dashed #421f08;
+  padding: 8px;
+  font-size: 10px;
+  max-width: fit-content;
+  font-weight: 300;
+}
+
+.banner .title {
+  font-size: 100px;
+  font-weight: 700;
+  text-shadow: 2px 2px #fee8bb;
+}
+
+.banner .sub-title-2 {
+  font-size: 48px;
+  font-weight: 900;
+  text-shadow: 2px 2px #fee8bb;
+}
+
+.banner .banner-right .banner-img {
+  position: relative;
+}
+
+.banner .banner-right .img-1 {
+  position: absolute;
+  top: -11%;
+  right: 2%;
+  width: 54%;
+}
+
+.banner .banner-right .img-2 {
+  position: absolute;
+  top: 30%;
+  right: 34%;
+  width: 15%;
+  transform: rotate(-41deg);
+}
+
+.banner .banner-right .img-3 {
+  position: absolute;
+  top: 17%;
+  width: 12%;
+  right: 9%;
+}
+
+.banner .banner-right .img-4 {
+  position: absolute;
+  top: 40%;
+  width: 28%;
+  right: 14%;
+}
+
+.banner .banner-right .img-5 {
+  position: absolute;
+  top: 92%;
+  width: 28%;
+  right: 13%;
+}
+
+.banner .banner-right .img-6 {
+  position: absolute;
+  top: 90%;
+  width: 19%;
+  right: 6%;
+}
+
+.banner .banner-right .promotion {
+  position: absolute;
+  background: #df1c1c;
+  top: 74%;
+  right: 38%;
+  width: 120px;
+  height: 120px;
+  border-radius: 65px;
+}
+
+.banner .banner-right .price {
+  position: absolute;
+  top: 9%;
+  right: 9%;
+  width: 100px;
+  height: 100px;
+  background: #df1c1c;
+  border: 2px dashed #fff;
+  border-radius: 55px;
+  color: #fff;
+  font-size: 35px;
+  padding: 17px;
+}
+
+.banner .banner-right .price span {
+  font-size: 16px;
+  color: #fff;
+}
+
+.banner .banner-right .order-now {
+  position: absolute;
+  top: 58%;
+  right: 40%;
+  width: 24%;
+  color: #fff;
+}
+
+/* Speacial menu styling */
+.speacial-menu {
+  padding: 50px 80px;
+  display: flex;
+  height: 500px;
+}
+
+.speacial-menu .column-left,
+.speacial-menu .column-right {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+}
+
+.speacial-menu .column-left .img-left {
+  background-image: url("./img/Group2/Burger\ Image.png");
+  height: 100%;
+  color: #fff;
+  background-size: 100%;
+  border-radius: 6px;
+  padding: 28px;
+  background-repeat: no-repeat;
+}
+
+.speacial-menu .column-left .img-left .sub-title {
+  font-size: 20px;
+}
+
+.speacial-menu .column-left .img-left .title {
+  font-size: 23px;
+}
+
+.speacial-menu .column-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.speacial-menu .column-right .img-1,
+.speacial-menu .column-right .img-2 {
+  border-radius: 6px;
+  color: #fff;
+  padding: 30px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 47%;
+}
+
+.speacial-menu .column-right .sub-title {
+  font-size: 14px;
+}
+
+.speacial-menu .column-right .title {
+  font-size: 23px;
+  max-width: 170px;
+}
+
+.speacial-menu .column-right .img-1 {
+  background-image: url("./img/Group2/Image.png");
+  background-position: 77% 72%;
+}
+
+.speacial-menu .column-right .img-2 {
+  background-image: url("./img/Group2/Image\ \(1\).png");
+  background-position: 77% 43%;
+}
+
+/* Group 3 styling */
+#group-3 {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+#group-3 .container {
+  width: 100%;
+  text-align: center;
+}
+
+#group-3 .container .buy-now {
+  padding: 1em;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  background: #ffc134;
+  font-size: 20px;
+  color: #421f08;
+  font-weight: 500;
+}
+
+#group-3 .content .title {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 24px;
+  font-weight: 900;
+}
+
+#group-3 .content .sub-title {
+  text-align: center;
+  padding: 0 140px;
+  margin-top: 8px;
+}
+
+#group-3 .list-burger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-top: 48px;
+}
+
+#group-3 .list-burger .card {
+  width: calc(100% / 3);
+  text-align: center;
+}
+
+#group-3 .list-burger .card .item-img,
+#group-3 .list-burger .card .item-shadow {
+  text-align: center;
+}
+
+#group-3 .list-burger .card img {
+  object-fit: contain;
+  width: 60%;
+  max-height: 213px;
+}
+
+#group-3 .list-burger .card .item-title {
+  font-size: 30px;
+  letter-spacing: -2px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+#group-3 .list-burger .card .sub-title {
+  padding: 0 34px;
+}
+
+#group-3 .list-burger .card a {
+  background: #df1b1b;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 24px;
+  display: inline-block;
+  margin-top: 16px;
+}
+
+/* Group 4 slider styling */
+#group-4 {
+  position: relative;
+  width: 86%;
+  padding: 0px 40px;
+  margin: 60px auto;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#group-4 .slider {
+  display: flex;
+  justify-content: space-around;
+}
+
+#group-4 .po1,
+#group-4 .dot:hover {
+  background: #ffc134;
+}
+
+#group-4 .slider .column {
+  padding: 42px 8px;
+}
+
+#group-4 .slider .sub-title {
+  font-size: 17px;
+  color: #421f08;
+  font-weight: 700;
+}
+
+#group-4 .slider .title {
+  color: #421f08;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+#group-4 .slider .des {
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+#group-4 .slider .right img {
+  object-fit: contain;
+  width: 500px;
+}
+
+#group-4 .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#group-4 .po1 {
+  position: absolute;
+  top: 77%;
+  left: 47px;
+}
+
+#group-4 .po2 {
+  position: absolute;
+  top: 77%;
+  left: 70px;
+}
+#group-4 .po3 {
+  position: absolute;
+  top: 77%;
+  left: 93px;
+}
+
+/* Group 5 styling */
+#group-5 {
+  position: relative;
+  padding-top: 40px;
+  height: 500px;
+}
+
+#group-5 .sub-title,
+#group-5 .title {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+#group-5 .sub-title {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#group-5 .title {
+  font-size: 52px;
+  font-weight: 900;
+}
+
+#group-5 .enter-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#group-5 .info-left {
+  max-height: 223px;
+}
+
+input,
+#group-5 .info-right a {
+  display: block;
+  width: 330px;
+  margin: 20px;
+  padding: 5px 16px;
+  line-height: 35px;
+  border-radius: 5px;
+}
+
+#group-5 .info-right a {
+  text-align: center;
+  background: #df1b1b;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+#group-5 .burger {
+  position: absolute;
+  filter: drop-shadow(2.35rem 1.35rem 2rem rgba(0, 0, 0, 0.5));
+  width: 12%;
+  top: 0%;
+  left: 0%;
+}
+
+#group-5 .bottle {
+  position: absolute;
+  filter: drop-shadow(2.35rem 1.35rem 2rem rgba(0, 0, 0, 0.5));
+  width: 5%;
+  top: 37%;
+  left: 14%;
+}
+
+#group-5 .image {
+  position: absolute;
+  filter: drop-shadow(2.35rem 1.35rem 2rem rgba(0, 0, 0, 0.5));
+  width: 200px;
+  height: 311px;
+  top: 48%;
+  left: 85%;
+  object-fit: cover;
+  object-position: 0 50%;
+}
+
+/* Group 6 styling */
+#group-6 {
+  margin: -50px 60px;
+  height: 600px;
+}
+
+#group-6 .container {
+  position: relative;
+  background-image: url("./img/Group6/Layer.png");
+  background-repeat: no-repeat;
+  height: 800px;
+  background-size: 100%;
+}
+
+#group-6 .logo {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  width: 13%;
+}
+
+#group-6 .logo-text {
+  position: absolute;
+  top: 40%;
+  left: calc(22% - 150px);
+  font-size: 34px;
+  color: #fff;
+}
+
+#group-6 .des {
+  max-width: 400px;
+  position: absolute;
+  top: 52%;
+  left: 45px;
+  color: #fff;
+}
+
+#group-6 .mail {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  width: 2%;
+}
+
+#group-6 .email {
+  position: absolute;
+  top: 60%;
+  left: 73%;
+  color: #fff;
+}
+
+#group-6 .location {
+  position: absolute;
+  top: 55%;
+  left: 70%;
+  width: 2%;
+}
+
+#group-6 .adress {
+  position: absolute;
+  top: 55%;
+  left: 73%;
+  color: #fff;
+}
+
+#group-6 .copyright {
+  position: absolute;
+  top: 82%;
+  left: 47px;
+  color: #fff;
+}
+
+#group-6 .insta {
+  position: absolute;
+  top: 76%;
+  left: 71%;
+  width: 20%;
+}
+#group-6 .fb {
+  position: absolute;
+  top: 76%;
+  left: 81%;
+  width: 20%;
+}
+#group-6 .twiter {
+  position: absolute;
+  top: 76%;
+  left: 81%;
+  width: 20%;
+}
+#group-6 .whatisapp {
+  position: absolute;
+  top: 71%;
+  right: 28px;
+  width: 20%;
+}
+
+/* Group 7 styling */
+
+@media (max-width: 768px) {
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    background: #333;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    text-align: center;
+    padding-top: 40px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar .express-info {
+    display: none;
+  }
+
+  .navbar .menu.active {
+    left: 0;
+  }
+
+  .navbar .express-delivery .menu-btn {
+    display: block;
+    z-index: 999;
+    color: #421f08;
+  }
+
+  .navbar .menu.active .menu-btn {
+    position: absolute;
+    top: 5%;
+    left: 93%;
+    color: #fff;
+  }
+  /* .navbar .express-delivery .menu-btn.active i::before {
+    content: "\f00d";
+    z-index: 999;
+    color: #fff;
+  } */
+
+  .navbar .express-delivery .menu li {
+    display: block;
+  }
+
+  .navbar .express-delivery .menu li a {
+    color: #fff;
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+
+  #banner {
+    width: 775px;
+  }
+
+  #banner .banner-left .title {
+    font-size: 78px;
+  }
+
+  #banner .banner-right .img-1 {
+    top: 0%;
+  }
+
+  #banner .banner-right .img-3 {
+    top: 24%;
+  }
+  /* #banner .banner-right .img-4 {
+    top: 33%;
+  } */
+
+  #banner .banner-right .img-5 {
+    top: 53%;
+  }
+
+  #banner .banner-right .img-6 {
+    top: 52%;
+  }
+
+  #banner .banner-right .promotion {
+    top: 44%;
+    right: 34%;
+  }
+
+  .speacial-menu {
+    padding: 37px 41px;
+  }
+
+  .speacial-menu .column-left .img-left {
+    height: 53%;
+  }
+
+  .speacial-menu .column-right {
+    justify-content: unset;
+  }
+
+  .speacial-menu .column-right .img-1,
+  .speacial-menu .column-right .img-2 {
+    height: 25%;
+  }
+
+  .speacial-menu .column-right .img-2 {
+    margin-top: 10px;
+  }
+
+  #group-3 {
+    margin-top: -172px;
+  }
+
+  #group-4 .po1,
+  #group-4 .po2,
+  #group-4 .po3 {
+    top: 93%;
+  }
+
+  #group-4 .slider .right img {
+    width: 350px;
+    margin-top: 10px;
+  }
+
+  #group-4 .slider .left .des {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  #group-5 .burger {
+    left: 34%;
+    top: 69%;
+  }
+
+  #group-5 .bottle {
+    top: 67%;
+    left: 40%;
+  }
+
+  #group-5 .image {
+    width: 20%;
+    height: auto;
+    top: 71%;
+    left: 43%;
+  }
+
+  #group-6 .logo {
+    top: 15%;
+  }
+
+  #group-6 .logo-text {
+    font-size: 20px;
+    top: 20%;
+    left: 78px;
+  }
+
+  #group-6 .des {
+    top: 26%;
+    max-width: 360px;
+    left: 30px;
+  }
+
+  #group-6 .location {
+    top: 235px;
+    left: 66%;
+  }
+
+  #group-6 .adress {
+    top: 29%;
+    left: 70%;
+  }
+
+  #group-6 .mail {
+    top: 301px;
+    left: 66%;
+  }
+
+  #group-6 .email {
+    top: 37%;
+    left: 70%;
+  }
+
+  #group-6 .insta,
+  #group-6 .fb,
+  #group-6 .twiter {
+    top: 41%;
+  }
+
+  #group-6 .whatisapp {
+    top: 307px;
+    right: 15px;
+  }
+
+  #group-6 .copyright {
+    top: 43%;
+    left: 28px;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar .express-delivery .menu-btn {
+    display: block;
+    z-index: 999;
+    color: #421f08;
+  }
+
+  .navbar .menu.active .menu-btn {
+    position: absolute;
+    top: 9%;
+    left: 91%;
+    color: #fff;
+  }
+
+  .navbar .logo img {
+    width: 90px;
+    height: 90px;
+    padding: 15px;
+  }
+
+  .navbar .logo span {
+    display: none;
+  }
+
+  #banner .banner-left .title {
+    font-size: 60px;
+  }
+
+  #banner .banner-right .img-1 {
+    top: 40%;
+    right: -84%;
+    width: 117%;
+  }
+
+  .banner .banner-right .img-2 {
+    top: 63%;
+    right: -27%;
+    width: 29%;
+  }
+
+  #banner .banner-right .img-3 {
+    top: 54%;
+    right: -73%;
+    width: 19%;
+  }
+
+  .banner .banner-right .img-4 {
+    top: 68%;
+    right: -61%;
+    width: 47%;
+  }
+
+  #banner .banner-right .img-5 {
+    top: 96%;
+    right: -61%;
+    width: 50%;
+  }
+
+  #banner .banner-right .img-6 {
+    top: 91%;
+    right: -81%;
+    width: 40%;
+  }
+
+  #banner .banner-right .promotion {
+    top: 80%;
+    right: -23%;
+  }
+
+  #banner {
+    width: 600px;
+  }
+
+  .speacial-menu {
+    display: block;
+    padding: 37px 56px;
+  }
+
+  .speacial-menu .column-left .img-left {
+    height: 75%;
+    width: 469px;
+  }
+
+  .speacial-menu .column-right {
+    display: block;
+    margin-top: -110px;
+  }
+
+  .speacial-menu .column-right .img-1 {
+    height: 200px;
+    width: 469px;
+  }
+  .speacial-menu .column-right .img-2 {
+    height: 200px;
+    width: 469px;
+  }
+
+  #group-3 {
+    margin-top: 315px;
+    width: 600px;
+  }
+
+  #group-3 .list-burger {
+    flex-direction: column;
+  }
+
+  #group-3 .list-burger .card {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #group-4 .slider {
+    flex-direction: column;
+  }
+
+  #group-4 {
+    width: 506px;
+    margin: 60px 45px;
+  }
+
+  #group-5 {
+    width: 554px;
+    padding-top: 70px;
+    margin: 20px 20px;
+  }
+
+  #group-5 input,
+  #group-5 .info-right a {
+    width: 496px;
+  }
+
+  #group-5 .enter-info {
+    flex-direction: column;
+  }
+
+  #group-5 .burger {
+    left: 58%;
+    top: -8%;
+  }
+
+  #group-5 .bottle {
+    top: -8%;
+    left: 80%;
+  }
+
+  #group-5 .image {
+    top: -4%;
+    left: 62%;
+  }
+
+  #group-6 {
+    margin: 22px 0px;
+    height: 300px;
+  }
+
+  #group-6 .container {
+    height: 510px;
+    width: 600px;
+    background-size: cover;
+  }
+
+  #group-6 .logo {
+    top: 24%;
+  }
+
+  #group-6 .logo-text {
+    top: 31%;
+  }
+
+  #group-6 .des {
+    top: 38%;
+  }
+
+  #group-6 .copyright {
+    top: 79%;
+  }
+
+  #group-6 .location {
+    top: 298px;
+    width: 3%;
+    left: 5%;
+  }
+
+  #group-6 .adress {
+    top: 59%;
+    left: 12%;
+  }
+
+  #group-6 .email {
+    top: 66%;
+    left: 12%;
+  }
+
+  #group-6 .mail {
+    top: 338px;
+    width: 3%;
+    left: 5%;
+  }
+
+  #group-6 .whatisapp {
+    top: 103px;
+    right: 21px;
+    width: 30%;
+  }
+
+  #group-6 .insta {
+    top: 26%;
+    width: 30%;
+    left: 53%;
+  }
+
+  #group-6 .fb {
+    left: 69%;
+    width: 30%;
+    top: 26%;
+  }
+
+  #group-6 .twiter {
+    left: 70%;
+    width: 30%;
+    top: 26%;
+  }
+}
